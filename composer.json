@@ -1,0 +1,30 @@
+{
+    "name": "mglaman/webdrivers",
+    "description": "Some additional things around Facebook's WebDriver library.",
+    "type": "library",
+    "require": {
+        "facebook/webdriver": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": { "mglaman\\WebDriver\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "mglaman\\WebDriver\\Tests\\": "tests" }
+    },
+    "scripts": {
+        "download-chromedriver": "mglaman\\PhpLoad\\ChromeDriverDownload::download"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Glaman",
+            "email": "nmd.matt@gmail.com"
+        }
+    ]
+}
